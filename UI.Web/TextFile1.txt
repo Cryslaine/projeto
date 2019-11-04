@@ -1,0 +1,263 @@
+﻿ int idFornTel;
+
+        //public List<EmpresaTelefone> contatos = new List<EmpresaTelefone>();
+        //public List<TipoTelefoneDao> tipo = new List<TipoTelefoneDao>();
+
+        private bool ValidarEmpresa(object obj)
+        {
+            var erros = Validacao.getValidationErros(obj);
+            foreach (var error in erros)
+            {
+                MessageBox.Show((error.ErrorMessage));
+                return false;
+            }
+            return true;
+
+
+        }
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            //gvtelefoneEmpresa.DataSource = contatos;
+            //gvtelefoneEmpresa.DataBind();
+
+            //ddlTipo.DataSource = tipo;
+            //ddlTipo.DataBind();
+
+            List<ModEmpresa> modEmpresa = new List<ModEmpresa>();
+            EmpresaNEG negEmp = new EmpresaNEG();
+            modEmpresa = negEmp.Load();
+
+            foreach (var item in modEmpresa)
+            {
+                preenchimentoCampos(item);
+
+            }
+
+            //estando preenchido o botão e desativado
+            if (modEmpresa.Count > 0)
+            {
+                habilitardesabilitar(false);
+            }
+
+            //Populando ComboBox Tipo
+            grupBoxTipos();
+            //populando DataGridView
+            camposDataGrid();
+            btnEditarTelefone.Visible = false;
+        }
+        #region "Botao"
+        protected void btnEditar_Click(object sender, EventArgs e)
+        {
+            ModEmpresa modEmpresa = new ModEmpresa();
+
+            habilitardesabilitar(true);
+
+        }
+
+        protected void BtnPesquisar_Click(object sender, EventArgs e)
+        {
+            ModEmpresa modEmpresa = new ModEmpresa();
+            EmpresaNEG negEmp = new EmpresaNEG();
+
+            negEmp.PesquisaEmpresa(modEmpresa);
+
+            preenchimentoCampos(modEmpresa);
+            habilitardesabilitar(false);
+
+            MessageBox.Show("Pesquisa efetuada com sucesso!");
+        }
+       
+
+        protected void btnSalvar_Click(object sender, EventArgs e)
+        {
+            ModEmpresa modEmpresa = new ModEmpresa();
+            EmpresaNEG negEmp = new EmpresaNEG();
+
+
+
+            modEmpresa.NomeRazaoSocial = txtRazaoSocial.Text;
+            modEmpresa.NomeFantasia = txtNomeFantasia.Text;
+            modEmpresa.Cnpj = Regex.Replace(txtCnpj.Text, "[^0-9a-zA-Z]+", "");
+            modEmpresa.Endereco = txtEndereco.Text;
+            modEmpresa.Numero = txtN.Text;
+            modEmpresa.Bairro = txtBairro.Text;
+            modEmpresa.Cidade = txtCidade.Text;
+            modEmpresa.UF = txtUf.Text;
+            modEmpresa.CEP = txtCep.Text;
+            modEmpresa.Complemento = txtComplemento.Text;
+
+            if (!ValidarEmpresa(modEmpresa))
+            {
+                return;
+            }
+
+
+            negEmp.SalvarEAtualizarEmpresa(modEmpresa);
+            MessageBox.Show("Dados inserido com sucesso!");
+
+
+            negEmp.SalvarEAtualizarEmpresa(modEmpresa);
+            //Campos ativos
+            habilitardesabilitar(false);
+
+        }
+        protected void btnCancelar_Click1(object sender, EventArgs e)
+        {
+            preenchimentoCampos(null);
+
+            habilitardesabilitar(true);
+        }
+        protected void btnCancelarTelefone_Click(object sender, EventArgs e)
+        {
+
+            limparCamposTelefone();
+            btnSalvarTelefone.Visible = true;
+            btnEditarTelefone.Visible = false;
+        }
+        protected void btnSalvarTelefone_Click(object sender, EventArgs e)
+        {
+            ModEmpresaTelefone modTE = new ModEmpresaTelefone();
+            EmpresaNEG negEmp = new EmpresaNEG();
+
+            modTE.Tipo = new TipoTelefone { Id = Convert.ToInt32(ddlTipo.SelectedValue) };
+            modTE.IdEmpresa = Convert.ToInt32(txtIdEmp.Text);
+            modTE.Telefone = txtTelefone.Text;
+
+            if (!ValidarEmpresa(modTE))
+            {
+                return;
+            }
+
+            negEmp.SalvarTelefoneEmpresa(modTE);
+            MessageBox.Show("Formulario salvo com sucesso!");
+        }
+        
+        #endregion
+
+
+        protected void GvTelefone_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //gvtelefoneEmpresa.DataSource = contatos;
+
+        }
+        #region "Campos GridView"
+        public void grupBoxTipos()
+        {
+
+            //Tras os itens cadastrados no banco e acrescrenta um novo item a lista ...
+
+            EmpresaNEG negEmp = new EmpresaNEG();
+            List<TipoTelefone> lstTipoTelefone = negEmp.GrupoBobTipoTelefone();
+            lstTipoTelefone.Add(new TipoTelefone { Id = 0, Descricao = "Selecione..." });
+            ddlTipo.DataSource = lstTipoTelefone.OrderBy(o => o.Id).ToList();
+
+
+        }
+        public void camposDataGrid()
+        {
+
+            EmpresaNEG negEmp = new EmpresaNEG();
+            gvtelefoneEmpresa.DataSource =
+                negEmp.CamposTelefoneDataGrid(Convert.ToInt32(txtIdEmp.Text))
+                .Select(a => new { a.Id, a.Telefone, a.Tipo.Descricao }).ToList();
+
+        }
+        #endregion
+
+        #region "Limpar/Habilitar/Preencher : Campo"
+        private void limparCamposTelefone()
+        {
+            ddlTipo.Text = string.Empty;
+            txtTelefone.Text = string.Empty;
+            txtId.Text = string.Empty;
+        }
+
+        private void habilitardesabilitar(bool tipo)
+        {
+            txtNomeFantasia.Enabled = tipo;
+            txtRazaoSocial.Enabled = tipo;
+            txtCnpj.Enabled = tipo;
+            txtEndereco.Enabled = tipo;
+            txtN.Enabled = tipo;
+            txtBairro.Enabled = tipo;
+            txtCidade.Enabled = tipo;
+            txtUf.Enabled = tipo;
+            txtCep.Enabled = tipo;
+            txtComplemento.Enabled = tipo;
+            btnSalvar.Enabled = tipo;
+        }
+
+
+        private void preenchimentoCampos(ModEmpresa modEmpresa)
+        {
+
+            txtNomeFantasia.Text = modEmpresa == null ? string.Empty : modEmpresa.NomeFantasia;
+            txtRazaoSocial.Text = modEmpresa == null ? string.Empty : modEmpresa.NomeRazaoSocial;
+            txtCnpj.Text = modEmpresa == null ? string.Empty : modEmpresa.Cnpj;
+            txtEndereco.Text = modEmpresa == null ? string.Empty : modEmpresa.Endereco;
+            txtN.Text = modEmpresa == null ? string.Empty : modEmpresa.Numero;
+            txtBairro.Text = modEmpresa == null ? string.Empty : modEmpresa.Bairro;
+            txtCidade.Text = modEmpresa == null ? string.Empty : modEmpresa.Cidade;
+            txtUf.Text = modEmpresa == null ? string.Empty : modEmpresa.UF;
+            txtCep.Text = modEmpresa == null ? string.Empty : modEmpresa.CEP;
+            txtComplemento.Text = modEmpresa == null ? string.Empty : modEmpresa.Complemento;
+            txtIdEmp.Text = Convert.ToString(modEmpresa.Id);
+
+        }
+
+
+
+
+        #endregion
+
+    }
+
+
+
+	Testes
+
+
+	<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Para obter mais informações sobre como configurar seu aplicativo ASP.NET, visite
+  https://go.microsoft.com/fwlink/?LinkId=169433
+  -->
+<configuration>
+  <system.web>
+    <compilation debug="true" targetFramework="4.7.2" />
+    <httpRuntime targetFramework="4.7.2" />
+    <pages>
+      <namespaces>
+        <add namespace="System.Web.Optimization" />
+      </namespaces>
+      <controls>
+        <add assembly="Microsoft.AspNet.Web.Optimization.WebForms" namespace="Microsoft.AspNet.Web.Optimization.WebForms" tagPrefix="webopt" />
+      </controls>
+    </pages>
+  </system.web>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1"> 
+      <dependentAssembly>
+        <assemblyIdentity name="Antlr3.Runtime" publicKeyToken="eb42632606e9261f" />
+        <bindingRedirect oldVersion="0.0.0.0-3.5.0.2" newVersion="3.5.0.2" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" />
+        <bindingRedirect oldVersion="0.0.0.0-11.0.0.0" newVersion="11.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="WebGrease" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="0.0.0.0-1.6.5135.21930" newVersion="1.6.5135.21930" />
+      </dependentAssembly>      
+    </assemblyBinding>
+  </runtime>
+  <system.codedom>
+    <compilers>
+      <compiler language="c#;cs;csharp" extension=".cs" type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" warningLevel="4" compilerOptions="/langversion:default /nowarn:1659;1699;1701" />
+      <compiler language="vb;vbs;visualbasic;vbscript" extension=".vb" type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" warningLevel="4" compilerOptions="/langversion:default /nowarn:41008 /define:_MYTYPE=\&quot;Web\&quot; /optionInfer+" />
+    </compilers>
+  </system.codedom>
+  <appSettings>
+    <add key="ConnectionString" value="Data Source=.;Initial Catalog=ESTOQUE;Integrated Security=True" />
+  </appSettings>
+</configuration>

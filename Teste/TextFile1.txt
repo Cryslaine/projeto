@@ -1,0 +1,225 @@
+﻿using Data;
+using Modelo;
+using System;
+using System.Data;
+using System.Data.SqlClient;
+namespace Teste
+{
+    class Program
+
+    {
+        static void Main(string[] args)
+        {
+            ModFornecedor fornecedor = new ModFornecedor();
+            fornecedor.Nome = "fornecedor 1";
+
+            FornecedorDao fornecedorDao = new FornecedorDao();
+            fornecedorDao.Adicionar(fornecedor);
+
+            SqlDataAdapter adp = new SqlDataAdapter(fornecedor); // adaptador
+            DataTable tb = new DataTable();// objeto de memória
+            adp.Fill(tb); // preechimento 
+
+            entidade.CommandText = "INSERT TAB_FORNECEDOR(NOME,RAZAO_SOCIAL,CNPJ,TELEFONE,ENDERECO)VALUES(CrysPru)";
+            entidade.ExecuteNonQuery();
+
+            //// Conexão
+         
+            //SqlConnection cn = new SqlConnection();
+            //string strCx = @"integated Security=SSPI;Persisty Security Info=False;Initial catalog=estoque;Data Source=NBBV026295\SQLEXPRESS";
+
+            //cn.ConnectionString = strCx;
+            //cn.Open();
+
+            ////Comando "Quary"
+            //SqlCommand entidade = new SqlCommand(); // Objeto de comando
+            //entidade.Connection = cn;
+            //entidade.CommandType = System.Data.CommandType.Text;
+            //entidade.CommandText = "SELECT NOME,RAZAO_SOCIAL,CNPJ,TELEFONE,ENDERECO FROM TB_FORNECEDOR ";
+
+            //SqlDataAdapter adp = new SqlDataAdapter(entidade); // adaptador
+            //DataTable tb = new DataTable();// objeto de memória
+            //adp.Fill(tb); // preechimento 
+
+            //entidade.CommandText = "INSERT TAB_FORNECEDOR(NOME,RAZAO_SOCIAL,CNPJ,TELEFONE,ENDERECO)VALUES(CrysPru)";
+            //entidade.ExecuteNonQuery();
+
+
+            ////fecha conexão
+            //cn.Close();
+
+            //foreach (DataRow row in tb.Rows) // listar a tabela (linhas)
+            //{
+            //    Console.WriteLine(row[0] + " - " + row[1]);
+            //}
+        }
+    }
+}
+
+
+
+
+  ModFornecedor fornecedor = new ModFornecedor();
+            fornecedor.Nome = "fornecedor 1";
+
+            FornecedorDao fornecedorDao = new FornecedorDao();
+            fornecedorDao.Adicionar(fornecedor);
+
+            SqlDataAdapter adp = new SqlDataAdapter(fornecedorDao); // adaptador
+            DataTable tb = new DataTable();// objeto de memória
+            adp.Fill(tb); // preechimento 
+
+            entidade.CommandText = "INSERT TAB_FORNECEDOR(NOME,RAZAO_SOCIAL,CNPJ,TELEFONE,ENDERECO)VALUES(CrysPru)";
+            entidade.ExecuteNonQuery();
+
+            //// Conexão
+            SqlConnection cn = new SqlConnection();
+            //string strCx = @"integated Security=SSPI;Persisty Security Info=False;Initial catalog=estoque;Data Source=NBBV026295\SQLEXPRESS";
+
+            //cn.ConnectionString = strCx;
+            //cn.Open();
+
+            ////Comando "Quary"
+            SqlCommand entidade = new SqlCommand(); // Objeto de comando
+            entidade.Connection = cn;
+            entidade.CommandType = System.Data.CommandType.Text;
+            entidade.CommandText = "SELECT NOME,RAZAO_SOCIAL,CNPJ,TELEFONE,ENDERECO FROM TB_FORNECEDOR ";
+
+           
+
+
+            //fecha conexão
+            cn.Close();
+
+            foreach (DataRow row in tb.Rows) // listar a tabela (linhas)
+            {
+                Console.WriteLine(row[0] + " - " + row[1]);
+            }
+        }
+    }
+}
+
+
+
+Crys Moadas
+CrysModas industria LTDA
+44.356.231/3521-11
+(11)999956-0823
+Rua Mirante
+
+
+
+readonly string connectionString = "Data Source =.; Initial Catalog = ESTOQUE; Integrated Security = true;";
+
+
+
+--CREATE DATABASE VENDAS
+	USE VENDAS
+--CREATE TABLE DB_FORNECEDOR (ID INT PRIMARY KEY NOT NULL,
+--							NOME VARCHAR (80),
+--							RAZAO_SOCIAL VARCHAR (100),
+--							CNPJ VARCHAR (20),
+--							TELEFONE VARCHAR (15),
+--							ENDERECO VARCHAR (50))
+
+
+DBCC CHECKIDENT ('DB_FORNECEDOR', RESEED, 4)
+
+
+
+
+
+
+select * from BD_FORNECEDOR
+
+--insert into TAB_FORNECEDOR select 'TESTE', '01234567891025', 'TESTE RAZO SOCIAL'
+
+=========================================
+
+public void ExecutarComando(string comando, List<SqlParameter> lstParam)
+        {
+           
+
+            //aqui efetuamos a conexão com o banco de dados
+            ConectaBanco();
+
+            //atribuo o comando SQL e a string de conexão
+            SqlCommand cmd = new SqlCommand(comando, conn);
+            cmd.CommandType = System.Data.CommandType.Text;
+
+            //aqui percorro a lista de parâmetros para
+            //que serão utilizados no comando Sql
+            foreach (SqlParameter param in lstParam)
+            {
+                cmd.Parameters.Add(param);
+            }
+
+            //Executa o comando no banco de dados
+            cmd.ExecuteNonQuery();
+
+
+
+            ////atribuo o comando SQL e a string de conexão
+
+            //using (SqlCommand cmd = new SqlCommand(comando, conn))
+            //{
+            //    cmd.CommandType = System.Data.CommandType.Text;
+
+            //    //aqui percorro a lista de parâmetros para
+            //    //que serão utilizados no comando Sql
+            //    foreach (SqlParameter param in lstParam)
+            //    {
+            //        cmd.Parameters.Add(param);
+            //    }
+
+            //    //Executa o comando no banco de dados
+            //    //cmd.ExecuteNonQuery();
+            //} 
+
+        }
+
+
+
+
+
+  public SqlDataReader ComandoSelecao(string comando, List<SqlParameter> lstParam)
+        {
+            //aqui efetuamos a conexão com o banco de dados
+            ConectaBanco();
+
+
+            //atribuo o comando SQL e a string de conexão
+
+            SqlCommand cmd = new SqlCommand(comando, conn);
+            cmd.CommandType = System.Data.CommandType.Text;
+
+
+
+            //aqui percorro a lista de parâmetros para
+            //que serão utilizados no comando Sql
+            foreach (SqlParameter param in lstParam)
+            {
+                //Executa o comando no banco de dados
+                cmd.Parameters.Add(param);
+            }
+
+            //using (SqlDataReader reader = cmd.ExecuteReader())
+            //{
+            //    while (reader.Read())
+            //    {
+            //        var table = reader;
+            //    }
+            //}
+            cmd.ExecuteReader();
+
+
+
+            return cmd.ExecuteReader();
+        }
+
+        //internal SqlDataReader ComandoSelecao(string comandoSQL)
+        //{
+        //    throw new NotImplementedException();
+        //}
+    }
+}

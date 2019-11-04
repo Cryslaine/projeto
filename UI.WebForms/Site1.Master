@@ -1,0 +1,210 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="UI.WebForms.Site1" %>
+
+<!DOCTYPE html>
+<style type="text/css">
+    #Menu1 {
+    }
+
+    .menu {
+        height: 200px;
+        width: 161px;
+        position: relative;
+        display: flex;
+        top: -124px;
+        font-family: 'Lobster', cursive;
+        font-family: 'Lobster Two', cursive;
+        border: solid 1px;
+        box-shadow: 10px 10px 10px 5px black;
+        border-radius: 20px 20px 30px;
+        color: #000000;
+    }
+
+    /*.Formulario {
+        width: 878px;
+        height: 1139px;
+        margin-left: 308px;
+        display: inline-flex;
+        display: flex;
+        top: -325px;
+        position: relative;
+    }*/
+
+    .master {
+        height: 400px;
+        background-color: orange;
+    }
+
+    .Titulo {
+        width: 332px;
+        height: 52px;
+        margin-left: 529px;
+        display: flex;
+        position: relative;
+        top: -13px;
+        margin-top: 56px;
+        border-radius: 10px 20px 30px;
+    }
+
+    .titulo_menu {
+        width: 122px;
+        margin-left: 429px;
+        position: relative;
+    }
+
+    .h2 {
+        position: relative;
+    }
+
+    .Logo {
+        position: relative;
+        font-family: 'Lobster', cursive;
+        color: #00008B;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .tamanhoTelaFornecedor {
+        background-color: #B0C4DE;
+        height: 800px;
+        border-radius: 20px 20px 30px;
+    }
+
+    .body {
+        width: 100%;
+        margin: auto
+    }
+
+    /*teste*/
+    /*.sidenav {
+        display: none;
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 60px;
+    }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+    }*/
+</style>
+
+<html>
+
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Estoque</title>
+
+    <%--<link rel="stylesheet" href="estilo.css" />--%>
+</head>
+
+
+<body style="width: 100%; margin: auto; height: 400px">
+    <div class="master" style="background-color: #B0C4DE; height: 400px;">
+        <form id="form1" runat="server" class="tamanhoTelaFornecedor">
+
+
+            <asp:ContentPlaceHolder ID="header" runat="server">
+            </asp:ContentPlaceHolder>
+            <!--Conteudo Principal do Site -->
+            <%--    <div class="container">
+
+            <header class="header">
+                <a class="logo" h
+            </header>
+
+        </div>--%>
+            <%--<div class="titulo_menu" style="background-color: #FFFF00; top: 145px; left: -321px; height: 29px;">
+     </div>--%>
+            <div class="Logo" style="background-color: #6699FF; width: 200px; margin-left: 290px; top: 17px; left: -279px; height: 38px; border-radius: 10px 20px 30px 40px;">
+                &nbsp;**Crys Modas**
+            </div>
+            <div class="Titulo" style="background-color: #6699FF; left: -317px;">
+            </div>
+            <div class="menu" style="background-color: #99CCFF; margin-left: 27px; margin-top: 124px; left: -23px;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Menu
+
+               <%-- <div id="mySidenav" class="sidenav">
+                    <%--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>--%>
+               <%--     <a href="Empresa.aspx.cs">Empresa</a>
+                    <a href="FornecedorWeb.aspx">Fornecedor</a>
+                    <a href="ProdutoWeb.aspx">Produto</a>
+                    <a href="NotaFiscalWeb.aspx">Nota Fiscal</a>
+                </div>
+                <span style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776; open</span>
+
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidenav").style.display = "block";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.display = "none";
+                    }
+                </script>--%>
+
+                <asp:Menu ID="Menu1" runat="server" Style="z-index: 5; left: -50px; position: relative; top: 30px; width: 40px"
+                    Font-Bold="True" Font-Italic="True" dispaly="flex" flex="6">
+                    <DynamicItemTemplate>
+                        <%# Eval("Text") %>
+                    </DynamicItemTemplate>
+                    <Items>
+                        <asp:MenuItem Text="Empresa" NavigateUrl="Empresa.aspx" Value="Empresa"></asp:MenuItem>
+                        <asp:MenuItem Text="Fornecedor" NavigateUrl="FornecedorWeb.aspx" Value="Fornecedor"></asp:MenuItem>
+                        <asp:MenuItem Text="Produto" NavigateUrl="ProdutoWeb.aspx" Value="Produto"></asp:MenuItem>
+                        <asp:MenuItem Text="Nota Fiscal" NavigateUrl="NotaFiscalWeb.aspx" Value="Nota Fiscal">
+                        </asp:MenuItem>
+                    </Items>
+                    <StaticItemTemplate>
+                        <%# Eval("Text") %>
+                    </StaticItemTemplate>
+                </asp:Menu>
+            </div>
+            <div class="Formulario" style="margin-top: 0px; left: -120px;">
+            </div>
+
+            <asp:ContentPlaceHolder ID="content" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+            <asp:ContentPlaceHolder ID="footer" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+        </form>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,71 @@
+C:\Users\crysgaldino\source\repos\Treinamento.csharp.basico\Modelo\bin\Debug\Modelo.dll
+C:\Users\crysgaldino\source\repos\Treinamento.csharp.basico\Modelo\bin\Debug\Modelo.pdb
+C:\Users\crysgaldino\source\repos\Treinamento.csharp.basico\Modelo\bin\Debug\System.Data.Common.dll
+C:\Users\crysgaldino\source\repos\Treinamento.csharp.basico\Modelo\bin\Debug\System.Data.SqlClient.dll
+C:\Users\crysgaldino\source\repos\Treinamento.csharp.basico\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\crysgaldino\source\repos\Treinamento.csharp.basico\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\crysgaldino\source\repos\Treinamento.csharp.basico\Modelo\obj\Debug\Modelo.dll
+C:\Users\crysgaldino\source\repos\Treinamento.csharp.basico\Modelo\obj\Debug\Modelo.pdb
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Modelo\bin\Debug\Modelo.dll
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Modelo\bin\Debug\Modelo.pdb
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Modelo\bin\Debug\System.Data.Common.dll
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Modelo\bin\Debug\System.Data.SqlClient.dll
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Modelo\obj\Debug\Modelo.dll
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Modelo\obj\Debug\Modelo.pdb
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Modelo\bin\Debug\Modelo.dll
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Modelo\bin\Debug\Modelo.pdb
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Modelo\bin\Debug\System.Data.Common.dll
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Modelo\bin\Debug\System.Data.SqlClient.dll
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Modelo\obj\Debug\Modelo.csprojAssemblyReference.cache
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Modelo\obj\Debug\Modelo.dll
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Modelo\obj\Debug\Modelo.pdb
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Modelo\bin\Debug\Modelo.dll
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Modelo\bin\Debug\Modelo.pdb
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Modelo\bin\Debug\System.Data.Common.dll
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Modelo\bin\Debug\System.Data.SqlClient.dll
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Modelo\obj\Debug\Modelo.csprojAssemblyReference.cache
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Modelo\obj\Debug\Modelo.dll
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Modelo\obj\Debug\Modelo.pdb
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Modelo\bin\Debug\Modelo.dll
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Modelo\bin\Debug\Modelo.pdb
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Modelo\bin\Debug\System.Data.Common.dll
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Modelo\bin\Debug\System.Data.SqlClient.dll
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Modelo\obj\Debug\Modelo.csprojAssemblyReference.cache
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Modelo\obj\Debug\Modelo.dll
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Modelo\obj\Debug\Modelo.pdb
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Modelo\bin\Debug\Modelo.dll
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Modelo\bin\Debug\Modelo.pdb
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Modelo\bin\Debug\System.Data.Common.dll
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Modelo\bin\Debug\System.Data.SqlClient.dll
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Modelo\obj\Debug\Modelo.csprojAssemblyReference.cache
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Modelo\obj\Debug\Modelo.dll
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Modelo\obj\Debug\Modelo.pdb
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Modelo\bin\Debug\Modelo.dll.config
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Modelo\bin\Debug\EntityFramework.dll
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Modelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Modelo\bin\Debug\EntityFramework.xml
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Modelo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Modelo\bin\Debug\Modelo.dll.config
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Modelo\bin\Debug\Modelo.dll
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Modelo\bin\Debug\Modelo.pdb
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Modelo\bin\Debug\EntityFramework.dll
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Modelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Modelo\bin\Debug\System.Data.Common.dll
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Modelo\bin\Debug\System.Data.SqlClient.dll
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Modelo\bin\Debug\EntityFramework.xml
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Modelo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Modelo\obj\Debug\Modelo.csproj.CopyComplete
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Modelo\obj\Debug\Modelo.dll
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Modelo\obj\Debug\Modelo.pdb
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Modelo\obj\Debug\Modelo.csprojAssemblyReference.cache

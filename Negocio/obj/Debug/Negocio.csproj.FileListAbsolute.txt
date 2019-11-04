@@ -1,0 +1,24 @@
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Negocio\bin\Debug\Negocio.dll
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Negocio\bin\Debug\Negocio.pdb
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Negocio\bin\Debug\Data.dll
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Negocio\bin\Debug\Modelo.dll
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Negocio\bin\Debug\Data.pdb
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Negocio\bin\Debug\Modelo.pdb
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Negocio\bin\Debug\Modelo.dll.config
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Negocio\obj\Debug\Negocio.dll
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Negocio\obj\Debug\Negocio.pdb
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Negocio\bin\Debug\Negocio.dll
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Negocio\bin\Debug\Negocio.pdb
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Negocio\bin\Debug\Data.dll
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Negocio\bin\Debug\Modelo.dll
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Negocio\bin\Debug\Data.pdb
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Negocio\bin\Debug\Modelo.pdb
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Negocio\bin\Debug\Modelo.dll.config
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Negocio\obj\Debug\Negocio.dll
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Negocio\obj\Debug\Negocio.pdb

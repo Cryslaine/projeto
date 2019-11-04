@@ -1,0 +1,84 @@
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Data\bin\Debug\Data.dll
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Data\bin\Debug\Data.pdb
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Data\bin\Debug\Modelo.dll
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Data\bin\Debug\System.Data.Common.dll
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Data\bin\Debug\System.Data.SqlClient.dll
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Data\bin\Debug\Modelo.pdb
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Data\obj\Debug\Data.dll
+C:\Users\gabrielsanto\Downloads\Treinamento.csharp.basico\Treinamento.csharp.basico\Data\obj\Debug\Data.pdb
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Data\bin\Debug\Data.dll
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Data\bin\Debug\Data.pdb
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Data\bin\Debug\Modelo.dll
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Data\bin\Debug\System.Data.Common.dll
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Data\bin\Debug\System.Data.SqlClient.dll
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Data\bin\Debug\Modelo.pdb
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Data\obj\Debug\Data.dll
+C:\Users\gabrielsanto\source\repos\Treinamento_v2\Data\obj\Debug\Data.pdb
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\Data.dll
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\Data.pdb
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\Modelo.dll
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\MySql.Data.dll
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\System.Data.Common.dll
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\System.Data.SqlClient.dll
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\Google.Protobuf.dll
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\Modelo.pdb
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\MySql.Data.xml
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Data\obj\Debug\Data.dll
+C:\Users\crysgaldino\Desktop\OneDrive_2019-06-25\Treinamento_v2\Data\obj\Debug\Data.pdb
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\Data.dll
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\Data.pdb
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\Modelo.dll
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\MySql.Data.dll
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\System.Data.Common.dll
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\System.Data.SqlClient.dll
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\Google.Protobuf.dll
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\Modelo.pdb
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Data\bin\Debug\MySql.Data.xml
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Data\obj\Debug\Data.dll
+C:\Users\crysgaldino\source\repos\OneDrive_2019-06-25\Treinamento_v2\Data\obj\Debug\Data.pdb
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Data\bin\Debug\Data.dll
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Data\bin\Debug\Data.pdb
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Data\bin\Debug\Modelo.dll
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Data\bin\Debug\MySql.Data.dll
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Data\bin\Debug\System.Data.Common.dll
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Data\bin\Debug\System.Data.SqlClient.dll
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Data\bin\Debug\Google.Protobuf.dll
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Data\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Data\bin\Debug\Modelo.pdb
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Data\bin\Debug\MySql.Data.xml
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Data\obj\Debug\Data.dll
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Data\obj\Debug\Data.pdb
+C:\Users\crysgaldino\source\repos\Projeto.estoque.csharp.basico\Treinamento_v2\Data\bin\Debug\Modelo.dll.config
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Data\bin\Debug\Data.dll
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Data\bin\Debug\Data.pdb
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Data\bin\Debug\Modelo.dll
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Data\bin\Debug\MySql.Data.dll
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Data\bin\Debug\System.Data.Common.dll
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Data\bin\Debug\System.Data.SqlClient.dll
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Data\bin\Debug\Google.Protobuf.dll
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Data\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Data\bin\Debug\Modelo.pdb
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Data\bin\Debug\Modelo.dll.config
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Data\bin\Debug\MySql.Data.xml
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Data\obj\Debug\Data.dll
+C:\Users\crysgaldino\Desktop\web Forms\Treinamento_v2\Data\obj\Debug\Data.pdb

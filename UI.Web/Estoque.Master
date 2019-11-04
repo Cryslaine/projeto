@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Estoque.master.cs" Inherits="UI.Web.Estoque" %>
+
+
+<!DOCTYPE html>
+
+<html >
+
+<head runat="server">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> </title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <%--<link href="Styles.css" rel="stylesheet" type="text/css" />--%>
+
+</head>
+<body>
+
+    
+    <main>
+         <form id="form1" runat="server">
+             <header>
+        <h1>Cryslaine</h1>
+    </header>
+             <menu>
+
+                 <asp:TreeView ID="TreeView1" runat="server" ImageSet="News" NodeIndent="10" style="z-index: 1; left: 50px; top: 70px; position: absolute; height: 44px; width: 120px">
+                     <HoverNodeStyle Font-Underline="True" />
+                     <Nodes>
+                         <asp:TreeNode Text="Empresa" Value="Empresa"></asp:TreeNode>
+                         <asp:TreeNode Text="Fornecedor" Value="Fornecedor"></asp:TreeNode>
+                         <asp:TreeNode Text="Produto" Value="Produto"></asp:TreeNode>
+                         <asp:TreeNode Text="Nota Fiscal" Value="Nota Fiscal"></asp:TreeNode>
+                     </Nodes>
+                     <NodeStyle Font-Names="Arial" Font-Size="10pt" ForeColor="Black" HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                     <ParentNodeStyle Font-Bold="False" />
+                     <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" VerticalPadding="0px" />
+                 </asp:TreeView>
+
+
+
+
+
+             </menu>
+        <div>
+ </div>
+
+        <div id="mainContent">
+ </div>
+
+    </form>
+    </main>
+   
+ <asp:ContentPlaceHolder id="MainContent" runat="server">
+ </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+ </asp:ContentPlaceHolder>
+    
+</body>
+</html>
