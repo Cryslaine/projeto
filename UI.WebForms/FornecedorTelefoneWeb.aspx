@@ -56,7 +56,7 @@
     <asp:Label ID="lbIdTel" runat="server" Style="z-index: 1; left: 172px; top: 168px; position: absolute;" Text="Id Telef:" Font-Bold="True" Font-Names="Arial" ForeColor="#0000CC" Visible="False"></asp:Label>
     <asp:Label ID="LbTelefone" runat="server" Style="z-index: 1; left: 670px; top: 180px; position: absolute" Text="Telefone:" Font-Bold="True" Font-Names="Arial" ForeColor="#0000CC"></asp:Label>
     <asp:Label ID="LbFTipo" runat="server" Style="z-index: 1; left: 275px; top: 180px; position: absolute; height: 19px; width: 50px;" Text="Tipo:" Font-Bold="True" Font-Names="Arial" ForeColor="#0000CC"></asp:Label>
-    <asp:Label ID="LbFornCadastro" runat="server" BackColor="#CCCCCC" BorderColor="Black" Font-Bold="True" Font-Italic="True" Font-Names="Georgia" Style="z-index: 1; left: 275px; top: 120px; position: absolute; width: 187px; height: 18px" Text="Telefones Fornecedor"></asp:Label>
+    <asp:Label ID="LbFornCadastro" runat="server" BorderColor="Black" Font-Bold="True" Font-Italic="True" Font-Names="Georgia" Style="z-index: 1; left: 275px; top: 120px; position: absolute; width: 187px; height: 18px" Text="Telefones Fornecedor"></asp:Label>
     <asp:GridView ID="gvTelefoneFornecedor" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="None"
         BorderWidth="1px" CellPadding="3" GridLines="Vertical" Style="z-index: 1; left: 275px; top: 320px; position: absolute; width: 606px" AllowPaging="True" DataKeyNames="Id" PageSize="3" OnRowDeleting="gvTelefoneFornecedor_RowDeleting1" OnRowEditing="gvTelefoneFornecedor_RowEditing2" OnPageIndexChanging="gvTelefoneFornecedor_PageIndexChanging">
 

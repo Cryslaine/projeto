@@ -28,11 +28,28 @@ namespace UI.WebForms
         }
         protected void Page_Load(object sender, EventArgs e)
         {
+            EmpresaNEG negEmp = new EmpresaNEG();
+            ModEmpresaTelefone telef = new ModEmpresaTelefone();
+            if (!Page.IsPostBack)
+            {
 
-            grupBoxTipos();
+                negEmp.dvSelecionarPorId(telef.Id);
+                Validate();
+                grupBoxTipos();
+                List<ModEmpresa> modEmpresa = new List<ModEmpresa>();
+                modEmpresa = negEmp.Load();
 
-            camposDataGrid();
+                foreach (var item in modEmpresa)
+                {
+                    preenchimentoCampos(item);
 
+                }
+                camposDataGrid();
+
+               // grupBoxTipos();
+
+
+            }
 
             
            
@@ -81,6 +98,7 @@ namespace UI.WebForms
             camposDataGrid();
             limparCamposTelefone();
             btnEditarTelefone.Enabled = false;
+            btnSalvarTelefone.Enabled = true;
         }
 
         protected void btnCancelarTelefone_Click(object sender, EventArgs e)
@@ -102,7 +120,7 @@ namespace UI.WebForms
             //txtUf.Text = modEmpresa == null ? string.Empty : modEmpresa.UF;
             //txtCep.Text = modEmpresa == null ? string.Empty : modEmpresa.CEP;
             //txtComplemento.Text = modEmpresa == null ? string.Empty : modEmpresa.Complemento;
-            //txtId.Text = Convert.ToString(modEmpresa.Id);
+            txtId.Text = Convert.ToString(modEmpresa.Id);
             txtIdEmpresa.Text = modEmpresa == null ? string.Empty : Convert.ToString(modEmpresa.Id);
 
         }
@@ -132,7 +150,7 @@ namespace UI.WebForms
             btnEditarTelefone.Enabled = true;
             btnSalvarTelefone.Enabled = false;
 
-            // e.Cancel = true;
+             e.Cancel = true;
             gvTelefoneEmpresa.EditIndex = -1;
 
         }
@@ -184,5 +202,12 @@ namespace UI.WebForms
             txtNumeroTelefone.Text = string.Empty;
             //txtId.Text = string.Empty;
         }
+
+        protected void gvTelefoneEmpresa_PageIndexChanging1(object sender, GridViewPageEventArgs e)
+        {
+            gvTelefoneEmpresa.PageIndex = e.NewPageIndex;
+            camposDataGrid();
+        }
+
     }
 }

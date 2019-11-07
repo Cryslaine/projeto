@@ -36,7 +36,7 @@ namespace UI.WebForms
 
                 negEmp.dvSelecionarPorId(telef.Id);
                 Validate();
-                grupBoxTipos();
+                //grupBoxTipos();
                 List<ModEmpresa> modEmpresa = new List<ModEmpresa>();
                 modEmpresa = negEmp.Load();
 
@@ -53,7 +53,7 @@ namespace UI.WebForms
                 }
 
 
-                camposDataGrid();
+                //camposDataGrid();
 
 
             }
@@ -139,54 +139,54 @@ namespace UI.WebForms
 
         }
 
-        protected void btnSalvarTelefone_Click(object sender, EventArgs e)
-        {
-            ModEmpresaTelefone modTE = new ModEmpresaTelefone();
-            EmpresaNEG negEmp = new EmpresaNEG();
+        //protected void btnSalvarTelefone_Click(object sender, EventArgs e)
+        //{
+        //    ModEmpresaTelefone modTE = new ModEmpresaTelefone();
+        //    EmpresaNEG negEmp = new EmpresaNEG();
 
-            modTE.Tipo = new TipoTelefone { Id = Convert.ToInt32(ddlTipo.SelectedValue) };
-            modTE.IdEmpresa = Convert.ToInt32(txtIdEmpresa.Text);
-            modTE.Telefone = txtNumeroTelefone.Text;
+        //    modTE.Tipo = new TipoTelefone { Id = Convert.ToInt32(ddlTipo.SelectedValue) };
+        //    modTE.IdEmpresa = Convert.ToInt32(txtIdEmpresa.Text);
+        //    modTE.Telefone = txtNumeroTelefone.Text;
 
-            if (!ValidarEmpresa(modTE))
-            {
-                return;
-            }
+        //    if (!ValidarEmpresa(modTE))
+        //    {
+        //        return;
+        //    }
 
-            negEmp.SalvarTelefoneEmpresa(modTE);
-            MessageBox.Show("Formulario salvo com sucesso!");
+        //    negEmp.SalvarTelefoneEmpresa(modTE);
+        //    MessageBox.Show("Formulario salvo com sucesso!");
 
-            camposDataGrid();
-            limparCamposTelefone();
-        }
+        //    camposDataGrid();
+        //    limparCamposTelefone();
+        //}
 
-        protected void btnEditarTelefone_Click(object sender, EventArgs e)
-        {
-            ModEmpresaTelefone modTE = new ModEmpresaTelefone();
-            EmpresaNEG negEmp = new EmpresaNEG();
+        //protected void btnEditarTelefone_Click(object sender, EventArgs e)
+        //{
+        //    ModEmpresaTelefone modTE = new ModEmpresaTelefone();
+        //    EmpresaNEG negEmp = new EmpresaNEG();
 
-            modTE.Id = Convert.ToInt32(txtIdEmpresa.Text);
-            modTE.Tipo = new TipoTelefone { Id = Convert.ToInt32(ddlTipo.SelectedValue) };
-            modTE.IdEmpresa = Convert.ToInt32(txtIdEmpresa.Text);
-            modTE.Telefone = txtNumeroTelefone.Text;
+        //    modTE.Id = Convert.ToInt32(txtIdEmpresa.Text);
+        //    modTE.Tipo = new TipoTelefone { Id = Convert.ToInt32(ddlTipo.SelectedValue) };
+        //    modTE.IdEmpresa = Convert.ToInt32(txtIdEmpresa.Text);
+        //    modTE.Telefone = txtNumeroTelefone.Text;
 
-            if (!ValidarEmpresa(modTE))
-            {
-                return;
-            }
-            negEmp.EditarTelefoneEmpresa(modTE);
-            MessageBox.Show("Formulario atualizado com sucesso!");
-            camposDataGrid();
-            limparCamposTelefone();
-            btnEditarTelefone.Enabled = false;
-        }
+        //    if (!ValidarEmpresa(modTE))
+        //    {
+        //        return;
+        //    }
+        //    negEmp.EditarTelefoneEmpresa(modTE);
+        //    MessageBox.Show("Formulario atualizado com sucesso!");
+        //    camposDataGrid();
+        //    limparCamposTelefone();
+        //    btnEditarTelefone.Enabled = false;
+        //}
 
-        protected void btnCancelarTelefone_Click(object sender, EventArgs e)
-        {
-            limparCamposTelefone();
-            btnSalvarTelefone.Enabled = false;
-            btnEditarTelefone.Enabled = true;
-        }
+        //protected void btnCancelarTelefone_Click(object sender, EventArgs e)
+        //{
+        //    limparCamposTelefone();
+        //    btnSalvarTelefone.Enabled = false;
+        //    btnEditarTelefone.Enabled = true;
+        //}
 
         protected void btnPesquisa_Click(object sender, EventArgs e)
         {
@@ -250,99 +250,99 @@ namespace UI.WebForms
             txtCep.Text = modEmpresa == null ? string.Empty : modEmpresa.CEP;
             txtComplemento.Text = modEmpresa == null ? string.Empty : modEmpresa.Complemento;
             txtId.Text = Convert.ToString(modEmpresa.Id);
-            txtIdEmpresa.Text = modEmpresa == null ? string.Empty : Convert.ToString(modEmpresa.Id);
+           // txtIdEmpresa.Text = modEmpresa == null ? string.Empty : Convert.ToString(modEmpresa.Id);
 
         }
         #endregion
 
-        #region "GridView"
-        public void camposDataGrid()
-        {
+        //#region "GridView"
+        //public void camposDataGrid()
+        //{
 
-            EmpresaNEG negEmp = new EmpresaNEG();
-            gvTelefoneEmpresa.DataSource =
-                negEmp.CamposTelefoneDataGrid(Convert.ToInt32(txtId.Text)).Select(a => new
-                { a.Id, a.Tipo.Descricao, a.Telefone }).ToList();
+        //    EmpresaNEG negEmp = new EmpresaNEG();
+        //    gvTelefoneEmpresa.DataSource =
+        //        negEmp.CamposTelefoneDataGrid(Convert.ToInt32(txtId.Text)).Select(a => new
+        //        { a.Id, a.Tipo.Descricao, a.Telefone }).ToList();
 
-            gvTelefoneEmpresa.DataBind();
-        }
-        protected void gvTelefoneEmpresa_RowEditing(object sender, GridViewEditEventArgs e)
-        {
-            EmpresaNEG negEmp = new EmpresaNEG();
-            ModEmpresaTelefone modTE = new ModEmpresaTelefone();
+        //    gvTelefoneEmpresa.DataBind();
+        //}
+        //protected void gvTelefoneEmpresa_RowEditing(object sender, GridViewEditEventArgs e)
+        //{
+        //    EmpresaNEG negEmp = new EmpresaNEG();
+        //    ModEmpresaTelefone modTE = new ModEmpresaTelefone();
 
-            int Primarykey = Convert.ToInt16(gvTelefoneEmpresa.DataKeys[e.NewEditIndex].Value);
+        //    int Primarykey = Convert.ToInt16(gvTelefoneEmpresa.DataKeys[e.NewEditIndex].Value);
 
-            modTE = negEmp.dvSelecionarPorId(Primarykey);
+        //    modTE = negEmp.dvSelecionarPorId(Primarykey);
 
-            ddlTipo.SelectedValue = modTE.Tipo.Id.ToString();
-            txtIdEmpresa.Text = Convert.ToInt32(modTE.Id).ToString();
-            txtNumeroTelefone.Text = modTE.Telefone;
+        //    ddlTipo.SelectedValue = modTE.Tipo.Id.ToString();
+        //    txtIdEmpresa.Text = Convert.ToInt32(modTE.Id).ToString();
+        //    txtNumeroTelefone.Text = modTE.Telefone;
 
-            btnEditarTelefone.Enabled = true;
-            btnSalvarTelefone.Enabled = false;
+        //    btnEditarTelefone.Enabled = true;
+        //    btnSalvarTelefone.Enabled = false;
 
-            // e.Cancel = true;
-            gvTelefoneEmpresa.EditIndex = -1;
+        //    // e.Cancel = true;
+        //    gvTelefoneEmpresa.EditIndex = -1;
 
-        }
+        //}
 
-        protected void gvTelefoneEmpresa_RowDeleting(object sender, GridViewDeleteEventArgs e)
-        {
-            EmpresaNEG negEmp = new EmpresaNEG();
-            ModEmpresaTelefone modTE = new ModEmpresaTelefone();
+        //protected void gvTelefoneEmpresa_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        //{
+        //    EmpresaNEG negEmp = new EmpresaNEG();
+        //    ModEmpresaTelefone modTE = new ModEmpresaTelefone();
 
-            negEmp.DataGridCell(Convert.ToInt32(e.Keys[0]));
+        //    negEmp.DataGridCell(Convert.ToInt32(e.Keys[0]));
 
-            MessageBox.Show("Dado excluido com sucesso!");
+        //    MessageBox.Show("Dado excluido com sucesso!");
 
-            camposDataGrid();
-        }
+        //    camposDataGrid();
+        //}
 
-        protected void gvTelefoneEmpresa_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
-        {
-            gvTelefoneEmpresa.EditIndex = -1;
-            DataBind();
-        }
+        //protected void gvTelefoneEmpresa_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+        //{
+        //    gvTelefoneEmpresa.EditIndex = -1;
+        //    DataBind();
+        //}
 
-        protected void gvTelefoneEmpresa_PageIndexChanging(object sender, GridViewPageEventArgs e)
-        {
-            gvTelefoneEmpresa.PageIndex = e.NewPageIndex;
-            camposDataGrid();
-        }
-        #endregion
+        //protected void gvTelefoneEmpresa_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        //{
+        //    gvTelefoneEmpresa.PageIndex = e.NewPageIndex;
+        //    camposDataGrid();
+        //}
+        //#endregion
 
-        public void grupBoxTipos()
-        {
+        //public void grupBoxTipos()
+        //{
 
-            //Tras os itens cadastrados no banco e acrescrenta um novo item a lista ...
+        //    //Tras os itens cadastrados no banco e acrescrenta um novo item a lista ...
 
-            EmpresaNEG negEmp = new EmpresaNEG();
-            List<TipoTelefone> lstTipoTelefone = negEmp.GrupoBobTipoTelefone();
-            lstTipoTelefone.Add(new TipoTelefone { Id = 0, Descricao = "Selecione..." });
-            ddlTipo.DataSource = lstTipoTelefone.OrderBy(o => o.Id).ToList();
-            ddlTipo.DataValueField = "Id";
-            ddlTipo.DataTextField = "Descricao";
-            ddlTipo.DataBind();
+        //    EmpresaNEG negEmp = new EmpresaNEG();
+        //    List<TipoTelefone> lstTipoTelefone = negEmp.GrupoBobTipoTelefone();
+        //    lstTipoTelefone.Add(new TipoTelefone { Id = 0, Descricao = "Selecione..." });
+        //    ddlTipo.DataSource = lstTipoTelefone.OrderBy(o => o.Id).ToList();
+        //    ddlTipo.DataValueField = "Id";
+        //    ddlTipo.DataTextField = "Descricao";
+        //    ddlTipo.DataBind();
 
-        }
-
-
+        //}
 
 
-        private void limparCamposTelefone()
-        {
-            ddlTipo.SelectedItem.Value = string.Empty;
-            txtNumeroTelefone.Text = string.Empty;
-            txtId.Text = string.Empty;
-        }
-        private void BtnCancelar_Click(object sender, EventArgs e)
-        {
-            limparCamposTelefone();
-            btnSalvarTelefone.Visible = true;
-            btnEditarTelefone.Visible = false;
 
-        }
+
+        //private void limparCamposTelefone()
+        //{
+        //    ddlTipo.SelectedItem.Value = string.Empty;
+        //    txtNumeroTelefone.Text = string.Empty;
+        //    txtId.Text = string.Empty;
+        //}
+        //private void BtnCancelar_Click(object sender, EventArgs e)
+        //{
+        //    limparCamposTelefone();
+        //    btnSalvarTelefone.Visible = true;
+        //    btnEditarTelefone.Visible = false;
+
+        //}
 
 
     }

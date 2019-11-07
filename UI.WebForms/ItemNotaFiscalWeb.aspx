@@ -40,10 +40,11 @@
         <a href="NotaFiscalWeb.aspx" id="about">Nota Fiscal</a>
 
     </div>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="content" runat="server">
     <p>
-        <asp:Label ID="LbItemNota" runat="server" Style="z-index: 1; left: 270px; top: 125px; position: absolute; width: 187px; height: 26px; right: 923px;" Text="Item Da Nota Fiscal " BackColor="#CCCCCC" BorderColor="Black" Font-Bold="True" Font-Italic="True" Font-Names="Georgia"></asp:Label>
+        <asp:Label ID="LbItemNota" runat="server" Style="z-index: 1; left: 270px; top: 125px; position: absolute; width: 187px; height: 26px; right: 923px;" Text="Item Da Nota Fiscal " BorderColor="Black" Font-Bold="True" Font-Italic="True" Font-Names="Georgia"></asp:Label>
         <asp:DropDownList ID="ddlQuantidade" runat="server" Style="z-index: 1; left: 558px; top: 210px; position: absolute; height: 31px;" Font-Bold="True">
             <asp:ListItem>Selecione..</asp:ListItem>
             <asp:ListItem>1</asp:ListItem>
@@ -98,7 +99,7 @@
             <asp:ListItem>50</asp:ListItem>
         </asp:DropDownList>
         <asp:Label ID="LbIdNota" runat="server" Style="z-index: 1; left: 270px; top: 180px; position: absolute; height: 18px;" Text="Id Nota Fiscal:" Font-Bold="True" Font-Names="Arial" ForeColor="#0000CC"></asp:Label>
-        <asp:TextBox ID="txtValorItem" runat="server" Style="z-index: 1; left: 700px; top: 210px; position: absolute" MaxLength="10" BorderStyle="Solid">R$</asp:TextBox>
+        <asp:TextBox ID="txtValorItem" runat="server" Style="z-index: 1; left: 700px; top: 210px; height: 30px; position: absolute" MaxLength="10" BorderStyle="Solid">R$</asp:TextBox>
         <asp:Label ID="LbQuantidadeItem" runat="server" Style="z-index: 1; left: 560px; top: 180px; position: absolute" Text="Quantidade:" Font-Bold="True" Font-Names="Arial" ForeColor="#0000CC"></asp:Label>
         <asp:Label ID="LbIdItemDaNota" runat="server" Style="z-index: 1; left: 176px; top: 190px; position: absolute; width: 32px; height: 38px;" Text="Id Item:" Visible="False" Font-Bold="True" Font-Names="Arial" ForeColor="#0000CC"></asp:Label>
         <asp:TextBox ID="txtIdItemNotaFiscal" runat="server" Style="z-index: 1; left: 173px; top: 233px; position: absolute; width: 17px; height: 16px;" MaxLength="10" Visible="False"></asp:TextBox>
@@ -133,7 +134,10 @@
         </asp:DropDownList>
         <asp:Button ID="btnCancelar" runat="server" OnClick="btnExcluirItem_Click" Style="z-index: 1; left: 580px; top: 290px; position: absolute; height: 26px;" Text="Cancelar" Font-Names="Arial Black" />
 
+
     </p>
+
+}
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="footer" runat="server">
 </asp:Content>

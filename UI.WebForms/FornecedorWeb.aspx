@@ -50,19 +50,19 @@
         <asp:Button ID="btnCancelar" runat="server" Style="z-index: 1; left: 549px; top: -57px; position: absolute; width: 82px;" Text="Excluir" OnClick="btnCancelar_Click" Font-Names="Arial Black" />
         <br />
 
-        <asp:Button ID="PesquisaCnpj" runat="server" Style="z-index: 1; left: 785px; top: 207px; position: absolute" Text="Pesquisar" OnClick="PesquisaCnpj_Click" Font-Bold="False" Font-Names="Arial Black" Font-Overline="False" />
+        <asp:Button ID="PesquisaCnpj" runat="server" Style="z-index: 1; left: 784px; top: 187px; height:30px; position: absolute" Text="Pesquisar" OnClick="PesquisaCnpj_Click" Font-Bold="False" Font-Names="Arial Black" Font-Overline="False" />
         <%--<asp:Button ID="btnSalvarTel" runat="server" Style="z-index: 1; left: 500px; top: 605px; position: absolute; height: 26px;" Text="Salvar" OnClick="btnSalvarTel_Click" Font-Bold="True" Font-Names="Arial Black" />--%>
-        <asp:Button ID="btnSalvar" runat="server" Style="z-index: 1; left: 618px; top: 382px; position: absolute" Text="Salvar" OnClick="btnSalvar_Click" Font-Bold="False" Font-Names="Arial Black" />
+        <asp:Button ID="btnSalvar" runat="server" Style="z-index: 1; left: 618px; top: 382px;height:30px; position: absolute" Text="Salvar" OnClick="btnSalvar_Click" Font-Bold="False" Font-Names="Arial Black" />
         <%--<asp:Button ID="btnEditarTel" runat="server" Style="z-index: 1; left: 593px; top: 603px; position: absolute; height: 21px;" Text="Editar" OnClick="btnEditarTel_Click" Font-Names="Arial Black" />--%>
-        <asp:Button ID="btnEditar" runat="server" Style="z-index: 1; left: 703px; top: 382px; position: absolute" Text="Editar" OnClick="btnEditar_Click" Font-Names="Arial Black" />
+        <asp:Button ID="btnEditar" runat="server" Style="z-index: 1; left: 703px; top: 382px;height:30px; position: absolute" Text="Editar" OnClick="btnEditar_Click" Font-Names="Arial Black" />
        <%-- <asp:Button ID="btnCancelarTel" runat="server" Style="z-index: 1; left: 673px; top: 600px; position: absolute; height: 24px;" Text="Cancelar" OnClick="btnCancelarTel_Click" Font-Names="Arial Black" />--%>
-        <asp:TextBox ID="txtCnpjPesquisa" runat="server" Style="z-index: 1; left: 498px; top: 210px; position: absolute; width: 253px;" BorderStyle="Inset" MaxLength="14"></asp:TextBox>
+        <asp:TextBox ID="txtCnpjPesquisa" runat="server" Style="z-index: 1; left: 497px; top: 185px; height:30px; position: absolute; width: 253px;" BorderStyle="Inset" MaxLength="14"></asp:TextBox>
         <%--<asp:TextBox ID="txtTelefone" runat="server" Style="z-index: 1; left: 670px; top: 557px; position: absolute" TabIndex="7" BorderStyle="Inset" MaxLength="11" TextMode="Phone" AutoCompleteType="HomePhone"></asp:TextBox>--%>
         <%--<asp:Label ID="LbBairro" runat="server" Style="z-index: 1; left: 650px; top: 949px; position: absolute" Text="Bairro:" Font-Bold="True" Font-Names="Arial" ForeColor="#0000CC"></asp:Label>--%>
-        <asp:TextBox ID="txtRazaoSocial" runat="server" Style="z-index: 1; left: 270px; top: 275px; position: absolute; width: 376px" TabIndex="1" BorderStyle="Inset" Font-Names="Arial" MaxLength="50"></asp:TextBox>
+        <asp:TextBox ID="txtRazaoSocial" runat="server" Style="z-index: 1; left: 270px; top: 275px; height:30px;position: absolute; width: 376px" TabIndex="1" BorderStyle="Inset" Font-Names="Arial" MaxLength="50"></asp:TextBox>
         <%--<asp:TextBox ID="txtIdTel" runat="server" Style="z-index: 1; left: 290px; top: 508px; position: absolute; width: 57px; height: 17px;" Enabled="False" TabIndex="4" Visible="False" BorderStyle="Inset" MaxLength="10"></asp:TextBox>--%>
-        <asp:TextBox ID="txtNomefantasia" runat="server" Style="z-index: 1; left: 700px; top: 275px; position: absolute; width: 338px" TabIndex="2" BorderStyle="Inset" MaxLength="50"></asp:TextBox>
-        <asp:TextBox ID="txtCnpj" runat="server" Style="z-index: 1; left: 270px; top: 346px; position: absolute; width: 238px" TabIndex="3" BorderStyle="Inset" MaxLength="18"></asp:TextBox>
+        <asp:TextBox ID="txtNomefantasia" runat="server" Style="z-index: 1; left: 700px; top: 275px;height:30px; position: absolute; width: 338px" TabIndex="2" BorderStyle="Inset" MaxLength="50"></asp:TextBox>
+        <asp:TextBox ID="txtCnpj" runat="server" Style="z-index: 1; left: 270px; top: 346px;height:30px;position: absolute; width: 238px" TabIndex="3" BorderStyle="Inset" MaxLength="18"></asp:TextBox>
         <asp:TextBox ID="txtId" runat="server" Style="z-index: 1; left: 204px; top: 211px; position: absolute; width: 49px; height: 16px;" Visible="False" BackColor="White" BorderStyle="Inset" EnableTheming="False" MaxLength="10"></asp:TextBox>
         <asp:Label ID="LbCnpj" runat="server" Style="z-index: 1; left: 270px; top: 315px; position: absolute" Text="CNPJ:" Font-Bold="True" Font-Names="Arial" ForeColor="#0000CC"></asp:Label>
         <asp:Label ID="LbNomeFantasia" runat="server" Style="z-index: 1; left: 700px; top: 242px; position: absolute; height: 17px" Text="Nome Fantasia:" Font-Bold="True" Font-Italic="True" Font-Names="Arial" ForeColor="#0000CC"></asp:Label>
@@ -149,7 +149,7 @@
             <SortedDescendingHeaderStyle BackColor="#000065" />
         </asp:GridView>--%>
        <%-- <asp:Label ID="LbFornCadastro" runat="server" BackColor="#CCCCCC" BorderColor="Black" Font-Bold="True" Font-Italic="True" Font-Names="Georgia" Style="z-index: 1; left: 270px; top: 466px; position: absolute; width: 187px; height: 18px" Text="Telefones Fornecedor"></asp:Label>--%>
-        <asp:Label ID="LbFornCadastro0" runat="server" BackColor="#CCCCCC" BorderColor="Black" Font-Bold="True" Font-Italic="True" Font-Names="Georgia" Style="z-index: 1; left: 270px; top: 100px; position: absolute; width: 187px; height: 18px; bottom: 113px;" Text="Cadastro Fornecedor"></asp:Label>
+        <asp:Label ID="LbFornCadastro0" runat="server" BorderColor="Black" Font-Bold="True" Font-Italic="True" Font-Names="Georgia" Style="z-index: 1; left: 270px; top: 100px; position: absolute; width: 187px; height: 18px; bottom: 113px;" Text="Cadastro Fornecedor"></asp:Label>
     </p>
 
 
